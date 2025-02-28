@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+
+:root {
+    --sidebar-background-color: #171717;
+    --input-background: #303030;
+    --main-background: #212121;
+    --title: #ececec;
+    --subtitle: #d8d8d88c;
+    --hover: #2f2f2f6b;
+    --icons: #b4b4b4;
+    --border: #ffffff1a;
+}
