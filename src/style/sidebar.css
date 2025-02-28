@@ -1,0 +1,91 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--sidebar-background-color);
+    width: 16vw;
+    padding: 10px;
+}
+
+
+/* SIDEBAR TOP*/
+
+.sidebar__top, .sidebar__top .search-new-chat {
+    display: flex;
+}
+
+.sidebar__top {
+    justify-content: space-between;
+}
+
+.sidebar__top .icon {
+    padding: 12px;
+    border-radius: 10px;
+    color: var(--icons);
+}
+
+.sidebar__top .icon:hover {
+    background-color: #ffffff1e;
+    cursor: pointer;
+}
+
+
+
+
+
+/* SIDEBAR CHATS */
+
+
+
+
+
+
+
+
+
+/* SIDEBAR FOOTER */
+
+.sidebar__footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 16vw;
+    padding: 10px;
+}
+
+.sidebar__footer .upgrade-plan {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+}
+
+.sidebar__footer .upgrade-plan:hover {
+    background-color: var(--hover);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.upgrade-plan .icon {
+    height: 100%;
+    padding: 5px;
+    border: 1px solid var(--border);
+    border-radius: 100%;
+    color: var(--icons);
+}
+
+.upgrade-plan .text {
+    margin-left: 5px;
+}
+
+.upgrade-plan .text h4 {
+    font-size: .9rem;
+    margin-bottom: 5px;
+    color: var(--title);
+}
+
+.upgrade-plan .text h5 {
+    font-size: .7rem;
+    color: var(--subtitle);
+}
