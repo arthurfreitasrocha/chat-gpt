@@ -111,24 +111,69 @@
     border-radius: 10px;
 }
 
-.chats section .chat-name:hover {
-    background-color: var(--hover);
-    cursor: pointer;
-}
-
 .chats section h4 {
+    width: 100%;
     line-height: 150%;
     font-size: .9rem;
     color: #ffffffe5;
+    cursor: pointer;
 }
 
-.chats section .icon {
+.chats section h4 + .icon {
     display: none;
+    height: 1vh;
+    color: #ffffff67;
+    cursor: pointer;
 }
 
 .chats section .chat-name:hover > .icon {
     display: block;
 }
+
+.chats section .icon:hover {
+    color: #ffffffd5;
+}
+
+.chats section h4 + .icon:focus > .sub-menu {
+    display: block;
+}
+
+
+
+
+
+/* SIDEBAR CHATS - SUBMENU */
+
+.chats .sub-menu {
+    display: none;
+    background-color: #353535;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #ffffff28;
+    border-radius: 15px;
+    color: #ffffffd5;
+}
+
+.chats .sub-menu li {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.chats .sub-menu li:hover {
+    background-color: #8080802f;
+}
+
+.chats .sub-menu li:nth-child(4) {
+    color: red;
+}
+
+
+
+
+
 
 
 
@@ -177,4 +222,12 @@
 .upgrade-plan .text h5 {
     font-size: .7rem;
     color: var(--subtitle);
+}
+
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }
