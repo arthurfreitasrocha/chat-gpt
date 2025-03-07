@@ -18,6 +18,7 @@
 }
 
 .sidebar header span {
+    position: relative;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -29,10 +30,44 @@
     background-color: #7e7e7e4f;
 }
 
+.sidebar header span:hover::after {
+    background-color: #000;
+    position: absolute;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff27;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sidebar header span:nth-child(1):hover::after {
+    content: "Fechar barra lateral";
+    top: 3px;
+    left: 45px;
+}
+
+.sidebar header div span:nth-child(1):hover::after {
+    content: "Buscar em chats";
+    top: calc(100% + 5px);
+    left: -100%;
+}
+
+.sidebar header div span:nth-child(2):hover::after {
+    content: "Novo chat";
+    top: calc(100% + 5px);
+    left: -60%;
+}
+
 .sidebar header div {
     display: flex;
     font-size: 1.3rem;
 }
+
+
 
 
 
@@ -42,6 +77,12 @@
 .sidebar main {
     height: calc(100% - 13vh);
 }
+
+
+
+
+
+
 
 
 
