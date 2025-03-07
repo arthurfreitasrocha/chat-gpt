@@ -17,7 +17,7 @@
     height: 6vh;
 }
 
-.sidebar header span {
+.sidebar header button {
     position: relative;
     padding: 10px;
     border-radius: 10px;
@@ -26,11 +26,11 @@
     cursor: pointer;
 }
 
-.sidebar header span:hover {
+.sidebar header button:hover {
     background-color: #7e7e7e4f;
 }
 
-.sidebar header span:hover::after {
+.sidebar header button:hover::after {
     background-color: #000;
     position: absolute;
     z-index: 10;
@@ -44,19 +44,19 @@
     color: #fff;
 }
 
-.sidebar header span:nth-child(1):hover::after {
+.sidebar header button:nth-child(1):hover::after {
     content: "Fechar barra lateral";
     top: 3px;
     left: 45px;
 }
 
-.sidebar header div span:nth-child(1):hover::after {
+.sidebar header div button:nth-child(1):hover::after {
     content: "Buscar em chats";
     top: calc(100% + 5px);
     left: -100%;
 }
 
-.sidebar header div span:nth-child(2):hover::after {
+.sidebar header div button:nth-child(2):hover::after {
     content: "Novo chat";
     top: calc(100% + 5px);
     left: -60%;
