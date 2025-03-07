@@ -1,13 +1,15 @@
 .sidebar {
     background-color: var(--sidebar-background-color);
-    position: relative;
     width: 13.5vw;
     height: 100%;
-    padding: 0 10px;
+    padding: 0 .625rem;
+    color: var(--sidebar-text-color);
 }
 
 
 /* HEADER */
+
+/* O header contém os botões da sidebar com ícones de navegação */
 
 .sidebar header {
     display: flex;
@@ -17,49 +19,54 @@
     height: 6vh;
 }
 
+/* O botão principal para fechar a barra lateral */
 .sidebar header button {
     position: relative;
-    padding: 10px;
-    border-radius: 10px;
+    padding: .625rem;
+    border-radius: .625rem;
     font-size: 1.2rem;
-    color: #a1a1a1;
+    color: var(--sidebar-button-color);
     cursor: pointer;
 }
 
 .sidebar header button:hover {
-    background-color: #7e7e7e4f;
+    background-color: var(--sidebar-button-hover-color);
 }
 
+/* A parte importante: a pseudo-classe ::after para mostrar a tooltip */
 .sidebar header button:hover::after {
-    background-color: #000;
-    position: absolute;
-    z-index: 10;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ffffff27;
+    background-color: var(--sidebar-button-after-background-color);
+    position: absolute;  /* Necessário para posicionar a tooltip em relação ao botão */
+    z-index: 10;         /* Coloca a tooltip acima de outros elementos */
+    padding: .625rem;
+    border-radius: .625rem;
+    border: 1px solid var(--sidebar-button-border-color);
     white-space: nowrap;
     font-family: "Inter", sans-serif;
     font-size: .8rem;
     font-weight: 600;
-    color: #fff;
 }
 
+/* Posicionamento específico para a tooltip do primeiro botão */
 .sidebar header button:nth-child(1):hover::after {
-    content: "Fechar barra lateral";
-    top: 3px;
-    left: 45px;
+    content: "Fechar barra lateral"; /* Texto exibido na tooltip */
+    top: 0.1875rem;
+    left: 2.8125rem;
 }
 
+/* Posicionamento para as tooltips dos outros botões */
 .sidebar header div button:nth-child(1):hover::after {
     content: "Buscar em chats";
-    top: calc(100% + 5px);
-    left: -100%;
+    top: calc(100% + 0.3125rem); /* Calcula a posição abaixo do botão */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sidebar header div button:nth-child(2):hover::after {
     content: "Novo chat";
-    top: calc(100% + 5px);
-    left: -60%;
+    top: calc(100% + 0.3125rem);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sidebar header div {
@@ -91,29 +98,28 @@
 .sidebar footer {
     display: flex;
     align-items: center;
-    padding: 0 5px;
+    padding: 0 0.3125rem;
     height: 6vh;
-    border-radius: 10px;
-    color: #fff;
+    border-radius: .625rem;
     cursor: pointer;
 }
 
 .sidebar footer:hover {
-    background-color: var(--hover);
+    background-color: var(--sidebar-hover-color);
 }
 
 .sidebar footer span {
-    margin: 0 10px 0 5px;
-    padding: 5px;
+    margin: 0 .625rem 0 0.3125rem;
+    padding: 0.3125rem;
     font-size: .8rem;
     border-radius: 100%;
-    border: 1px solid #ffffff3f;
+    border: 1px solid var(--sidebar-button-border-colo);
 }
 
 .sidebar footer .premium {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem;
 }
 
 .sidebar footer .premium h5 {
@@ -122,5 +128,5 @@
 
 .sidebar footer .premium p {
     font-size: .7rem;
-    color: #ffffff83;
+    color: var(--sidebar-subtitle-color);
 }
