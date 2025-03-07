@@ -1,331 +1,50 @@
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
     background-color: var(--sidebar-background-color);
-    width: 13.5vw;
-}
-
-
-
-
-/* SIDEBAR TOP*/
-
-.sidebar__top {
-    padding: 10px;
-}
-
-.sidebar__top, .sidebar__top .search-new-chat {
-    display: flex;
-}
-
-.sidebar__top {
-    justify-content: space-between;
-}
-
-.sidebar__top .icon {
-    padding: 12px;
-    border-radius: 10px;
-    color: var(--icons);
-}
-
-.sidebar__top .icon:hover {
-    background-color: #ffffff1e;
-    cursor: pointer;
-}
-
-
-
-
-/* SIDEBAR GPT */
-
-.sidebar__chats {
-    background-color: green;
     position: relative;
-    height: 85vh;
-    overflow: auto;
-}
-
-.sidebar__chats > div:first-child {
-    padding: 10px 13px;
-}
-
-.sidebar__chats .gpt {
-    margin-top: 8px;
-}
-
-.sidebar__chats .gpt__chat, .gpt__explore {
-    display: flex;
-    align-items: center;
-    padding: 7px 10px;
-    color: var(--title);
-}
-
-.sidebar__chats .gpt__chat:hover, .gpt__explore:hover {
-    background-color: var(--hover);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.sidebar__chats .gpt .icon {
-    width: 25px;
-    margin-right: 10px;
-    padding: 4px;
-    border-radius: 100%;
-    text-align: center;
-}
-
-.sidebar__chats .gpt__chat .icon {
-    border: 1px solid var(--icons);
-}
-
-.sidebar__chats h3 {
-    font-size: .85rem;
+    width: 13.5vw;
+    height: 100%;
 }
 
 
+/* HEADER */
 
-
-/* SIDEBAR CHATS */
-
-/*
-.sidebar__chats .chats {
-    height: 80vh;
-    color: white;
-}
-
-.chats section {
-    margin: 40px 0;
-}
-
-.chats section h3 {
-    padding: 0 10px;
-    font-size: .8rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.chats section .chat-name {
+.sidebar header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.chats section h4 {
     width: 100%;
-    line-height: 150%;
-    font-size: .9rem;
-    color: #ffffffe5;
-    cursor: pointer;
-}
-
-.chats section h4 + .icon {
-    display: none;
-    height: 1vh;
-    color: #ffffff67;
-    cursor: pointer;
-}
-
-.chats section .chat-name:hover > .icon {
-    display: block;
-}
-
-.chats section .icon:hover {
-    color: #ffffffd5;
-}
-
-.chats section h4 + .icon:focus > .sub-menu {
-    display: block;
-}
-*/
-
-.sidebar .chats section {
-    margin: 40px 0;
-    color: #fff;
-}
-
-.sidebar .chats h3 {
+    height: 6vh;
     padding: 0 10px;
-    font-size: .8rem;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 
-.sidebar .chat-name {
-    display: flex;
+.sidebar header span {
     padding: 10px;
     border-radius: 10px;
+    font-size: 1.2rem;
+    color: #a1a1a1;
+    cursor: pointer;
 }
 
-.sidebar .chat-name:hover {
-    
+.sidebar header span:hover {
+    background-color: #7e7e7e4f;
 }
 
-.sidebar .chat-name h4 {
+.sidebar header div {
     display: flex;
-    font-size: .9rem;
-    cursor: pointer;
-}
-
-.sidebar .chat-name span {
-    color: #ffffffc0;
-}
-
-.sidebar .chat-name span:hover {
-    color: #fff;
-    cursor: pointer;
+    font-size: 1.3rem;
 }
 
 
 
 
+/* FOOTER */
 
-
-/* SUBMENU */
-
-.sidebar .chat-name ul {
-    background-color: #353535;
+.sidebar footer {
+    background-color: blue;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid #ffffff28;
-    border-radius: 15px;
-    color: #fff;
-}
-
-.sidebar .chat-name li {
-    display: flex;
-    gap: 10px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.sidebar .chat-name li:hover {
-    background-color: #8080802f;
-    cursor: pointer;
-}
-
-.sidebar .chat-name li::after {
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    font-size: .9rem;
-}
-
-.sidebar .chat-name li:nth-child(1)::after {
-    content: "Compartilhar";
-}
-
-.sidebar .chat-name li:nth-child(2)::after {
-    content: "Renomear";
-}
-
-.sidebar .chat-name li:nth-child(3)::after {
-    content: "Arquivar";
-}
-
-.sidebar .chat-name li:nth-child(4) {
-    color: red;
-}
-
-.sidebar .chat-name li:nth-child(4)::after {
-    content: "Excluir";
-}
-
-
-
-
-
-
-/* SIDEBAR CHATS - SUBMENU 
-
-.chats .sub-menu {
-    display: none;
-    background-color: #353535;
-    position: absolute;
-    padding: 10px;
-    border: 1px solid #ffffff28;
-    border-radius: 15px;
-    color: #ffffffd5;
-}
-
-.chats .sub-menu li {
-    display: flex;
-    gap: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: .9rem;
-}
-
-.chats .sub-menu li:hover {
-    background-color: #8080802f;
-}
-
-.chats .sub-menu li:nth-child(4) {
-    color: red;
-}
-
-*/
-
-
-
-
-
-
-/* SIDEBAR FOOTER */
-
-.sidebar__footer {
-    background-color: var(--sidebar-background-color);
-    position: fixed;
-    left: 0;
     bottom: 0;
-    width: 13.5vw;
-    padding: 10px;
-}
-
-.sidebar__footer .upgrade-plan {
     display: flex;
-    align-items: center;
-    gap: 3px;
-    padding: 10px;
-}
-
-.sidebar__footer .upgrade-plan:hover {
-    background-color: var(--hover);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.upgrade-plan .icon {
-    height: 100%;
-    padding: 5px;
-    border: 1px solid var(--border);
-    border-radius: 100%;
-    color: var(--icons);
-}
-
-.upgrade-plan .text {
-    margin-left: 5px;
-}
-
-.upgrade-plan .text h4 {
-    font-size: .9rem;
-    margin-bottom: 5px;
-    color: var(--title);
-}
-
-.upgrade-plan .text h5 {
-    font-size: .7rem;
-    color: var(--subtitle);
-}
-
-
-
-/* SCROLLBAR */
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
+    width: 100%;
+    height: 6vh;
+    padding: 0 10px;
 }
