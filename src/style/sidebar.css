@@ -7,7 +7,9 @@
 }
 
 
-/* HEADER */
+/* =====================================
+    HEADER - Contém botões de navegação 
+   ===================================== */
 
 /* O header contém os botões da sidebar com ícones de navegação */
 
@@ -79,10 +81,64 @@
 
 
 
-/* MAIN */
+
+
+/* =====================================
+    MAIN - Contém os links principais
+    e chats do usuário
+   ===================================== */
 
 .sidebar main {
+    /* Altura ajustada para ocupar o espaço restante, considerando header e footer */
     height: calc(100% - 13vh);
+}
+
+.sidebar nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    color: var(--sidebar-button-color);
+}
+
+.sidebar nav a:hover {
+    background-color: var(--sidebar-hover-color);
+    cursor: pointer;
+}
+
+.sidebar nav a span {
+    font-family: "Inter", sans-serif;
+    font-size: .85rem;
+    font-weight: 300;
+    color: var(--sidebar-text-color);
+}
+
+/* Tooltip automática baseada no atributo title */
+.sidebar nav a:first-child:hover::after {
+    content: attr(title);
+    background-color: var(--sidebar-background-color);
+    position: absolute;
+    top: 5%;
+    left: calc(100% + .9375rem);
+
+    z-index: 10;
+    padding: .625rem;
+    border-radius: .625rem;
+    border: 1px solid var(--sidebar-button-border-color);
+
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--sidebar-text-color);
 }
 
 
@@ -93,7 +149,9 @@
 
 
 
-/* FOOTER */
+/* =====================================
+    FOOTER - Área para upgrade premium
+   ===================================== */
 
 .sidebar footer {
     display: flex;
