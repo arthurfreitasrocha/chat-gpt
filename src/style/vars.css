@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
 
 :root {
+    /* General colors */
+    --text-color: #fff;
+    --subtitle-color: #ffffff83;
+
     /* Sidebar colors */
-    --sidebar-background-color: #171717;
+    --sidebar-background-color: #131313;
+    --sidebar-submenu-bg-color: #272727;
     --sidebar-hover-color: #2f2f2f6b;
-    --sidebar-text-color: #fff;
-    --sidebar-subtitle-color: #ffffff83;
     --sidebar-button-color: #a1a1a1;
     --sidebar-button-border-color: #ffffff27;
     --sidebar-button-hover-color: #7e7e7e4f;
     --sidebar-button-after-background-color: #000;
+
+    /* Main colors */
+    --main-background-color: #212121;
 }

@@ -1,0 +1,14 @@
+.sidebar {
+    background-color: var(--sidebar-background-color);
+    position: fixed;
+    width: 13.5vw;
+    height: 100%;
+}
+
+.main {
+    background-color: var(--main-background-color);
+    background-color: gre;
+    width: calc(100%-13.5vw);
+    height: 100%;
+    margin-left: 13.5vw;
+}

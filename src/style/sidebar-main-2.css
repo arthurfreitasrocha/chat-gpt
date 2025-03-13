@@ -1,8 +1,6 @@
 .sidebar {
-    background-color: var(--sidebar-background-color);
     width: 13.5vw;
     height: 100%;
-    padding: 0 .625rem;
     color: var(--sidebar-text-color);
 }
 
@@ -14,10 +12,15 @@
 /* O header contém os botões da sidebar com ícones de navegação */
 
 .sidebar header {
+    background-color: var(--sidebar-background-color);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: .625rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 13.5vw;
     height: 6vh;
 }
 
@@ -88,19 +91,27 @@
     e chats do usuário
    ===================================== */
 
+/* Nav */
+
 .sidebar main {
-    /* Altura ajustada para ocupar o espaço restante, considerando header e footer */
-    height: calc(100% - 13vh);
+    background-color: var(--sidebar-background-color);
+    position: fixed;
+    top: 6vh;
+    left: 0;
+    width: 13.5vw;
+    height: calc(100% - 14vh);
+    padding: 0 .625rem;
+    overflow: auto;
 }
 
-.sidebar nav {
+.sidebar main nav {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
 }
 
-.sidebar nav a {
+.sidebar main nav a {
     display: flex;
     align-items: center;
     gap: 0.625rem;
@@ -109,12 +120,12 @@
     color: var(--sidebar-button-color);
 }
 
-.sidebar nav a:hover {
+.sidebar main nav a:hover {
     background-color: var(--sidebar-hover-color);
     cursor: pointer;
 }
 
-.sidebar nav a span {
+.sidebar main nav a span {
     font-family: "Inter", sans-serif;
     font-size: .85rem;
     font-weight: 300;
@@ -122,14 +133,13 @@
 }
 
 /* Tooltip automática baseada no atributo title */
-.sidebar nav a:first-child:hover::after {
-    content: attr(title);
+.sidebar main nav a:first-child:hover::after {
+    content: attr(aria-label);
     background-color: var(--sidebar-background-color);
     position: absolute;
     top: 5%;
     left: calc(100% + .9375rem);
 
-    z-index: 10;
     padding: .625rem;
     border-radius: .625rem;
     border: 1px solid var(--sidebar-button-border-color);
@@ -149,26 +159,43 @@
 
 
 
+
+
+
+
+
+
+
+
 /* =====================================
     FOOTER - Área para upgrade premium
    ===================================== */
 
 .sidebar footer {
+    background-color: var(--sidebar-background-color);
+    position: fixed;
+    bottom: 0;
+    width: 13.5vw;
+    height: 8vh;
+    padding: .3125rem .625rem;
+}
+
+.sidebar footer .container:first-child {
     display: flex;
     align-items: center;
-    padding: 0 0.3125rem;
-    height: 6vh;
+    height: 100%;
+
     border-radius: .625rem;
     cursor: pointer;
 }
 
-.sidebar footer:hover {
+.sidebar footer .container:hover {
     background-color: var(--sidebar-hover-color);
 }
 
 .sidebar footer span {
-    margin: 0 .625rem 0 0.3125rem;
-    padding: 0.3125rem;
+    margin: 0 .625rem 0 .3125rem;
+    padding: .3125rem;
     font-size: .8rem;
     border-radius: 100%;
     border: 1px solid var(--sidebar-button-border-colo);
@@ -177,7 +204,7 @@
 .sidebar footer .premium {
     display: flex;
     flex-direction: column;
-    gap: 0.3125rem;
+    gap: .3125rem;
 }
 
 .sidebar footer .premium h5 {

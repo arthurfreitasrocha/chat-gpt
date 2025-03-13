@@ -7,34 +7,429 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./src/style/reset.css">
     <link rel="stylesheet" href="./src/style/vars.css">
-    <link rel="stylesheet" href="./src/style/sidebar.css">
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="./src/style/sidebar-header.css">
+    <link rel="stylesheet" href="./src/style/sidebar-main.css">
+    <link rel="stylesheet" href="./src/style/sidebar-footer.css">
 
     <title>ChatGPT</title>
 </head>
 <body>
     <aside class="sidebar">
         <header>
-            <button class="fa-solid fa-list" aria-label="Fechar barra lateral" role="button"></button>
+            <button class="fa-solid fa-list" aria-label="Fechar barra lateral"></button>
             <div>
-                <button class="fa-solid fa-magnifying-glass" aria-label="Buscar em chats" role="button"></button>
-                <button class="fa-solid fa-pen-to-square" aria-label="Novo chat" role="button"></button>
+                <button class="fa-solid fa-magnifying-glass" aria-label="Buscar em chats"></button>
+                <button class="fa-solid fa-pen-to-square" aria-label="Novo chat"></button>
             </div>
         </header>
 
         <main>
             <nav>
-                <a href="" class="fa-solid fa-brain" title="Novo Chat"><span>ChatGPT</span></a>
-                <a href="" class="fa-solid fa-spinner" title="Explorar GPTs"><span>Explorar GPTs</span></a>
+                <a href="" aria-label="Novo Chat">
+                    <span class="fa-solid fa-brain"></span>
+                    <p>ChatGPT</p>
+                </a>
+                <a href="" aria-label="Explorar GPTs">
+                    <span class="fa-solid fa-spinner"></span>
+                    <p>Explorar GPTs</p>
+                </a>
             </nav>
+
+            <section class="chats">
+                <section class="today">
+                    <h4>Hoje</h4>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="yesterday">
+                    <h4>Ontem</h4>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="7-days-ago">
+                    <h4>7 dias atrás</h4>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="30-days-ago">
+                    <h4>30 dias atrás</h4>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                        <button class="fa-solid fa-ellipsis"></button>
+                        <ul class="sub-menu">
+                            <li>
+                                <button class="fa-solid fa-arrow-up-from-bracket"><span>Compartilhar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-pencil"><span>Salvar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-box-archive"><span>Arquivar</span></button>
+                            </li>
+                            <li>
+                                <button class="fa-solid fa-trash"><span>Excluir</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
         </main>
 
         <footer>
-            <span class="fa-regular fa-star"></span>
-            <div class="premium">
-                <h5>Fazer upgrade do plano</h5>
-                <p>Mais acesso aos melhores modelos</p>
+            <div class="container">
+                <span class="fa-regular fa-star"></span>
+                <div class="premium">
+                    <h5>Fazer upgrade do plano</h5>
+                    <p>Mais acesso aos melhores modelos</p>
+                </div>
             </div>
         </footer>
     </aside>
+
+    <main class="main">
+        <header>
+            <ul class="chat-options" title="ChatGPT" aria-label="Outros modelos de GPT">
+                <li>
+                    <span></span>
+                    <div>
+                        <h5>ChatGPT Plus</h5> <!-- Stars icon -->
+                        <p>Nosso modelo mais inteligente e muito mais</p>
+                    </div>
+                    <a href="">Fazer Upgrade</a>
+                </li>
+                <li>
+                    <span></span> <!-- Atom icon -->
+                    <div>
+                        <h5>ChatGPT</h5>
+                        <p>Ótimo para tarefas do dia-a-dia</p>
+                    </div>
+                    <span></span> <!-- Check icon -->
+                </li>
+            </ul>
+
+            <div class="temporary-chat">
+                <span></span> <!-- Imagem de balão de fala -->
+                <p>Temporário</p>
+            </div>
+            <ul class="user">
+                <li>
+                    <span></span> <!-- imagem de circunferência de pessoa -->
+                    <p>Explorar GPTs</p>
+                </li>
+                <li>
+                    <span></span> <!-- imagem de cordinha? -->
+                    <p>Personalizar ChatGPT</p>
+                </li>
+                <li>
+                    <span></span> <!-- imagem de engrenagem -->
+                    <p>Configurações</p>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <span></span> <!-- img de computador -->
+                    <p>Baixe o aplicativo para Windows</p>
+                </li>
+                <li>
+                    <span></span> <!-- imagem de estrela -->
+                    <p>Fazer upgrade do plano</p>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <span></span> <!-- imagem de porta com seta pra fora -->
+                    <p>Sair</p>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Como posso ajudar?</h1>
+            <div class="input">
+                <input type="text" placeholder="Pergunte alguma coisa">
+                <div>
+                    <button aria-label="Adicionar anexo"></button> <!-- icone de + -->
+                    <button aria-label="Buscar"></button> <!-- icone de mundo -->
+                    <button aria-label="Refletir"></button> <!-- icone de lampada -->
+                </div>
+                <button aria-label="Enviar"></button> <!-- Seta para cima -->
+            </div>
+        </main>
+
+        <footer>
+            <p>O ChatGPT pode cometer erros. Considere verificar informações importantes.</p>
+        </footer>
+    </main>
 </body>
 </html>

@@ -1,0 +1,188 @@
+.sidebar main {
+    position: relative;
+    height: calc(100% - 14vh);
+    padding: 0 .625rem;
+    overflow: auto;
+}
+
+/* NAV */
+
+.sidebar main nav {
+    position: relative;
+}
+
+.sidebar main nav a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .625rem;
+    margin-top: .3125rem;
+    padding: .3125rem;
+
+    border-radius: .625rem;
+    color: var(--text-color);
+}
+
+.sidebar main nav a:hover {
+    background-color: var(--sidebar-hover-color);
+}
+
+.sidebar main nav a:first-child:hover::after {
+    background-color: var(--sidebar-button-after-background-color);
+    content: attr(aria-label);
+    position: absolute;  /* Necessário para posicionar a tooltip em relação ao botão */
+    top: 5%;
+    left: calc(100% + .9375rem);
+    transform: translateY(-5%);
+    z-index: 10;         /* Coloca a tooltip acima de outros elementos */
+
+    padding: .625rem;
+    border-radius: .625rem;
+    border: 1px solid var(--sidebar-button-border-color);
+
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.sidebar main nav a span {
+    color: var(--sidebar-button-color);
+}
+
+.sidebar main nav a .fa-brain {
+    padding: .3125rem;
+    border-radius: 100%;
+    border: 1px solid var(--sidebar-button-border-color);
+}
+
+.sidebar main nav a .fa-spinner {
+    padding: .3125rem .4375rem;
+}
+
+.sidebar main nav a p {
+    font-size: .85rem;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+/* CHATS */
+
+.sidebar main .chats section {
+    margin: 1.875rem 0;
+}
+
+.sidebar main .chats h4 {
+    background-color: var(--sidebar-background-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    padding: .625rem;
+
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.sidebar main .chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: .625rem;
+    border-radius: .3125rem;
+}
+
+.sidebar main .chat:hover {
+    background-color: var(--sidebar-button-hover-color);
+    cursor: pointer;
+}
+
+.sidebar main .chat:hover > .fa-ellipsis {
+    display: block;
+}
+
+.sidebar main .chat p {
+    padding: .3125rem 0;
+    font-size: .8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--text-color);
+}
+
+.sidebar main .chat p:hover {
+    cursor: pointer;
+}
+
+.sidebar main .chat .fa-ellipsis {
+    display: none;
+    color: var(--sidebar-button-color);
+}
+
+.sidebar main .chat .fa-ellipsis:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.sidebar main .chat .fa-ellipsis:focus + .sub-menu {
+    display: flex;
+}
+
+.sidebar main .chat .sub-menu {
+    background-color: var(--sidebar-submenu-bg-color);
+    position: absolute;
+    z-index: 20;
+    top: 80%;
+    right: 0;
+    padding: .8rem;
+
+    display: none;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.sidebar main .chat .sub-menu li {
+    padding: .9rem;
+    border-radius: .3125rem;
+}
+
+.sidebar main .chat .sub-menu li:hover {
+    background-color: var(--sidebar-button-hover-color);
+    cursor: pointer;
+}
+
+.sidebar main .chat .sub-menu li button {
+    display: flex;
+    gap: .625rem;
+    font-size: .95rem;
+    color: var(--text-color);
+}
+
+.sidebar main .chat .sub-menu li button:hover {
+    cursor: pointer;
+}
+
+.sidebar main .chat .sub-menu li:nth-child(4) button,
+.sidebar main .chat .sub-menu li:nth-child(4) button span {
+    color: red;
+}
+
+.sidebar main .chat .sub-menu li button span {
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+#none {
+    display: none;
+}

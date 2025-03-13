@@ -1,0 +1,20 @@
+Menu lateral: fa-solid fa-list fa-lg
+Pesquisa: fa-solid fa-magnifying-glass fa-lg
+Novo chat: fa-solid fa-pen-to-square fa-lg
+
+ChatGPT: fa-solid fa-brain fa-sm
+Explorar GPT: fa-solid fa-spinner fa-sm
+
+Três pontos: fa-solid fa-ellipsis
+Compartilhar: fa-solid fa-arrow-up-from-bracket
+Salvar: fa-solid fa-pencil
+Arquivar: fa-solid fa-box-archive
+Excluir: fa-solid fa-trash
+
+Premium: fa-regular fa-star fa-sm
+
+
+
+Fechar barra lateral
+Buscar em chats
+Novo chat

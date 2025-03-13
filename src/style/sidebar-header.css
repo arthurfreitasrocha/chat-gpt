@@ -1,0 +1,41 @@
+.sidebar header {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .625rem;
+}
+
+.sidebar header button {
+    position: relative;
+    padding: .625rem;
+    border-radius: .3215rem;
+
+    font-size: 1.25rem;
+    color: var(--sidebar-button-color);
+}
+
+.sidebar header button:hover {
+    background-color: var(--sidebar-button-hover-color);
+    cursor: pointer;
+}
+
+.sidebar header button:hover::after {
+    background-color: var(--sidebar-button-after-background-color);
+    content: attr(aria-label);
+    position: absolute;  /* Necessário para posicionar a tooltip em relação ao botão */
+    top: 50%;
+    left: calc(100% + .625rem);
+    transform: translateY(-50%);
+    z-index: 10;         /* Coloca a tooltip acima de outros elementos */
+
+    padding: .625rem;
+    border-radius: .625rem;
+    border: 1px solid var(--sidebar-button-border-color);
+
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
